@@ -27,6 +27,7 @@
 
 using namespace std;
 
+static const std::string bogus_uri = "http://unused.uri";
 /// \brief The \e attributes for a single XML element
 ///
 /// A container for name/value pairs (of strings) for the formal attributes, as collected during parsing.
@@ -34,7 +35,6 @@ using namespace std;
 /// This also holds other properties of the element that are unused in this implementation,
 /// including the \e namespace URI.
 class Attributes {
-  static string bogus_uri;		///< A placeholder for the namespace URI that should be attached to the element
 //  static string prefix;
   string *elementname;			///< The name of the XML element
   vector<string *> name;		///< List of names for each formal XML attribute

@@ -98,8 +98,6 @@
 #include <iostream>
 #include <string>
 
-string Attributes::bogus_uri("http://unused.uri");
-
 /// \brief The XML character scanner
 ///
 /// Tokenize a byte stream suitably for the main XML parser.  The scanner expects an ASCII or UTF-8
