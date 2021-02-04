@@ -15,7 +15,9 @@
  */
 /// \file memstate.hh
 /// \brief Classes for keeping track of memory state during emulation
-
+#ifdef LoadImage
+#undef LoadImage
+#endif
 #ifndef __CPUI_MEMSTATE__
 #define __CPUI_MEMSTATE__
 
